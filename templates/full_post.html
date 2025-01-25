@@ -1,0 +1,21 @@
+{%  extends 'main.html' %}
+
+{% block title %}
+        Read post
+{% endblock %}
+
+<!--Контейнер для статей-->
+<div class="feature col">
+{% block body %}
+<div class="col d-flex flex-column align-items-start gap-2">
+
+        <h2 class="fw-bold text-body-emphasis"> {{ result.title }} </h2>
+<!--        <p class="text-body-secondary"> {{ result.intro }}</p>-->
+        <p class="text-body-secondary"> {{ result.text }}</p>
+        <p class="text-body-secondary"> {{ result.date }}</p>
+        <a href="/get_posts" class="btn btn-primary btn-lg">Back</a>
+
+      </div>
+
+{% endblock %}
+</div>
